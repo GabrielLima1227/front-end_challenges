@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+ /*
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*
+h1{
+    text-align: center;
+    font: normal 400 2em "Young Serif", serif;
+}
+h2{
+    margin: 10px;
+    padding: 5px;
+    color:hsl(14, 45%, 36%);
+    font: normal 400 1.5em "Young Serif", serif;
+}
+p,li{
+    text-align: justify;
+    color:hsl(30, 10%, 34%);
+    font: normal 16px "Outfit", sans-serif;
+}
+main p.destaque{
+    color: hsl(30, 10%, 34%);
+    font-weight: bolder;
+}
+
+td.peso{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
