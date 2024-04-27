@@ -1,54 +1,26 @@
 @charset "UTF-8";
-
- /*
-- Nutmeg: hsl(14, 45%, 36%)
-- Dark Raspberry: hsl(332, 51%, 32%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
-*/
-
+/*Mobile: 375px
+  Desktop: 1440px*/
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/*
-h1{
-    text-align: center;
-    font: normal 400 2em "Young Serif", serif;
-}
-h2{
-    margin: 10px;
-    padding: 5px;
-    color:hsl(14, 45%, 36%);
-    font: normal 400 1.5em "Young Serif", serif;
-}
-p,li{
-    text-align: justify;
-    color:hsl(30, 10%, 34%);
-    font: normal 16px "Outfit", sans-serif;
-}
-main p.destaque{
-    color: hsl(30, 10%, 34%);
-    font-weight: bolder;
-}
-
-td.peso{
-    color: hsl(14, 45%, 36%);
-    font-weight: bolder;
-}
-*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font: normal 16px "Outfit", sans-serif;
+}
+:root{
+    --cor01: hsl(14, 45%, 36%);
+    --cor02: hsl(332, 51%, 32%);
+    --cor03: hsl(0, 0%, 100%);
+    --cor04: hsl(330, 100%, 98%);
+    --cor05: hsl(30, 54%, 90%);
+    --cor06: hsl(30, 18%, 87%);
+    --cor07: hsl(30, 10%, 34%);
+    --cor08: hsl(24, 5%, 18%);
+
 }
 body, html{
     width: 100vw;
@@ -59,4 +31,52 @@ main{
     width: 100vw;
     height: 100vh;
     position: relative;
+    text-align: justify;
 }
+/*section{
+    padding: 0px 30px 0px 30px;
+}
+article > div#imagem{
+    height: 200px;
+    display: block;
+    background: #5f2c82 url(../assets/images/image-omelette.jpeg) no-repeat center center;
+    background-size: cover;
+}
+h1{
+    font: normal 400 1.5em "Young Serif", serif;
+}
+article > section > h2.fonte{
+    
+    font: normal 400 2em "Young Serif", serif;
+}
+section > div#preparo{
+    width: 300px;
+    display: absolute;
+    border-radius: 15px;
+    padding: 5px 0px 5px 10px; 
+    margin: 10px 0px 10px 0px;
+    background-color: hsla(332, 51%, 32%, 0.184);
+}
+p.legenda{
+    color: #5f2c82;
+    font-weight: bolder;
+}
+p.destaque{
+    font-weight: bolder;
+    color: hsl(30, 10%, 34%);
+}
+ul.ilc{
+    list-style-type: disc;
+    color: purple;
+}
+section > div.informacoes{
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 10px; 
+}
+section > div > ul.{
+
+}
+section > div > ul,ol.lista{
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 25px ;
+}/*
