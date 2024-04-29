@@ -9,74 +9,144 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font: normal 16px "Outfit", sans-serif;
 }
 :root{
-    --cor01: hsl(14, 45%, 36%);
-    --cor02: hsl(332, 51%, 32%);
-    --cor03: hsl(0, 0%, 100%);
-    --cor04: hsl(330, 100%, 98%);
-    --cor05: hsl(30, 54%, 90%);
-    --cor06: hsl(30, 18%, 87%);
-    --cor07: hsl(30, 10%, 34%);
-    --cor08: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%); 
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
 
 }
 body, html{
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    line-height: 1.4;
+    min-height: 100vh;
+    place-content: center;
+    color: var(--Wenge_Brown);
+    background-color: var(--Eggshell);
+    font: normal 16px "Outfit", sans-serif;
 }
-main{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    text-align: justify;
+div.container{
+    margin: 2rem;
+    max-width: 800px;
+    border-radius: 1rem;
+    background-color: var(--White);
 }
-/*section{
-    padding: 0px 30px 0px 30px;
+div.container > div.imagem-receita{
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
 }
-article > div#imagem{
-    height: 200px;
+div.container > div.imagem-receita > img{
+    border-radius: 1rem;
+}
+img{
     display: block;
-    background: #5f2c82 url(../assets/images/image-omelette.jpeg) no-repeat center center;
-    background-size: cover;
+    max-width: 100%;
+}
+h1,h2{
+    font-weight: 400;
+    font-family: 'Young Serif', serif;
 }
 h1{
-    font: normal 400 1.5em "Young Serif", serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--Dark_Charcoal);
 }
-article > section > h2.fonte{
-    
-    font: normal 400 2em "Young Serif", serif;
+h2{
+    color: var(--Nutmeg);
+    margin-bottom: 1rem;
 }
-section > div#preparo{
-    width: 300px;
-    display: absolute;
-    border-radius: 15px;
-    padding: 5px 0px 5px 10px; 
-    margin: 10px 0px 10px 0px;
-    background-color: hsla(332, 51%, 32%, 0.184);
-}
-p.legenda{
-    color: #5f2c82;
-    font-weight: bolder;
-}
-p.destaque{
-    font-weight: bolder;
-    color: hsl(30, 10%, 34%);
-}
-ul.ilc{
-    list-style-type: disc;
-    color: purple;
-}
-section > div.informacoes{
-    margin: 10px 0px 10px 0px;
-    padding: 5px 0px 5px 10px; 
-}
-section > div > ul.{
+div.informacoes-receita{
+    margin: 0rem 2rem 2rem 2rem;
 
 }
-section > div > ul,ol.lista{
-    margin: 10px 0px 0px 0px;
-    padding: 0px 0px 0px 25px ;
-}/*
+div.Preparacao-receita{
+    padding: 1.25rem;
+    margin-top: 1rem;
+    border-radius: 1.25rem;
+    background-color: var(--Rose_White);
+}
+div.Preparacao-receita > h3{
+    color: var(--Dark_Raspberry);
+    margin-bottom: 1rem;
+}
+ul{
+    padding-left: 1.25rem;
+}
+ul li {
+    margin-bottom: 0.5rem
+}
+div.Preparacao-receita > ul > li::marker{ /*Pseudo-class usada para mudar a a propriedades da marcação de uma lista*/
+    color: var(--Dark_Raspberry);
+    font-weight: bolder;
+}
+ul > li > span{
+    color: var(--Wenge_Brown);
+    margin-left: 1rem;
+    font-weight: 700;
+}
+hr{
+    margin:1.5rem 0;
+    border: 1px solid var(--Light_Grey);
+}
+div.ingredientes-receita, div.passos-da-receita, div.nutrientes-receita{
+    margin: 2rem;
+}
+div.ingredientes-receita > ul > li{
+    margin: 0.5rem;
+}
+div.ingredientes-receita > ul > li > span{
+    font-weight: initial;
+}
+div.passos-da-receita > ol > li{
+    margin: 1rem;
+}
+div.passos-da-receita > ol > li::marker{
+    font-weight: bolder;
+    color:var(--Nutmeg);
+}
+div.passos-da-receita > ol > li > span{
+    font-weight: bolder;
+    color: var(--Wenge_Brown); 
+}
+div.nutrientes-receita > p{
+    margin-bottom: 0.75rem;
+}
+div.nutrientes-receita > div.tabela-nutricional > div.item{
+    display: flex;
+    padding: 0.75rem 2rem;
+    transition: all 200ms ease;
+    border-bottom: 1px solid var(--Light_Grey);
+}
+div.nutrientes-receita > div.tabela-nutricional:last-child > div.item:last-child{
+    border-bottom: 0px;
+}
+div.nutrientes-receita > div.tabela-nutricional > div.item > p:nth-child(2){
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+div.nutrientes-receita > div.tabela-nutricional:last-child > div.item *{
+    width: 100px;
+    margin: auto;
+}
+@media (max-width: 540px){
+    h1{
+        margin-top:2rem;
+    }
+    div.container{
+        margin: 0;
+    }
+    div.container > div.imagem-receita{
+        padding: 0;
+        border-radius: 0;
+    }
+    div.container > div.imagem-receita > img{
+        border-radius: 0;
+    }
+}
+ 
