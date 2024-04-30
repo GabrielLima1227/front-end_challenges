@@ -38,4 +38,70 @@ body,html{
     place-content: center;
     font-family: "Inter", sans-serif;
     background-color: var(--Off_Black);
+    Font-size: 14px;
+}
+div.container{
+    /*Essa margem serve para manter uma distância mínima entre o div.container e o body independente do tamanho do aparelho ou navegador.*/
+    margin: 2rem;
+    /*max-width: Utilizado para indicar qual a largura máxima que a div.container pode se expandir.*/
+    max-width: 800px;
+    /*border-radius: Ultilizado para fazer o arredondamento das bordas da div.container. */
+    border-radius: 1rem;
+    /*background-color: Usado para mudar a cor do plano de fundo, permitindo distinguir conteúdos.*/
+    /*var(): é usado para a utilização de variáveis definidas no `:root`.*/
+    background-color: var(--Dark_Grey);
+}
+div.container > div.imagem{
+    margin: 2rem;
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+}
+div.container > div.imagem > img{
+    border-radius: 50%;
+}
+div.container > div.informacoes{
+    display: grid;
+    place-content: center;
+    margin: 0rem 2rem 1rem 2rem;
+}
+div.container > div.informacoes > p,h1,h3{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+h1,h3{
+    font-weight: 500;
+}
+h3{
+    color: var(--Green);
+    margin-bottom: 1.5rem;
+}
+p{
+    margin-bottom: 2.5rem;
+}
+div.container > div.social{
+    display: grid;
+    place-content: center;
+    margin: 0rem 2rem 1rem 2rem;
+}
+div.container > div.social > a{
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--White);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    background-color: var(--Grey);
+}
+div.container > div.social > a:hover{
+    color: var(--Dark_Grey);
+    background-color: var(--Green);
+}
+div.attribution{
+    margin: 1rem;
+}
+div.attribution > a{
+    color: var(--Green);
+    text-decoration: none;
 }
