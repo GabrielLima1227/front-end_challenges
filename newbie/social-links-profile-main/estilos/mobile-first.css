@@ -31,3 +31,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body,html{
+    display: grid;
+    color: white;
+    min-height: 100vh;
+    place-content: center;
+    font-family: "Inter", sans-serif;
+    background-color: var(--Off_Black);
+}
