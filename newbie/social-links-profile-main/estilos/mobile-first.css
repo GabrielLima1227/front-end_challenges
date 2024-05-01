@@ -1,21 +1,5 @@
 @charset "UTF-8";
 
-/*Font size (paragraph): 14px
-
-- Mobile: 375px
-- Desktop: 1440px
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-
-     Weights: 400, 600, 700
-}
-*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
@@ -104,4 +88,10 @@ div.attribution{
 div.attribution > a{
     color: var(--Green);
     text-decoration: none;
+}
+
+@media (min-width: 1440px){
+    h1{
+       color: black; 
+    }
 }
