@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* Typical Device BreakPoints
+-------------------------------
+Pequenas Telas: Até 600px
+Celular: 600px Até 768px
+Tablet: 768px Até 992px
+Pc: 992px Até 1200px
+Grandes Telas: Acima de 1200px
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
@@ -114,8 +123,12 @@ div.attribution > a {
     text-decoration: none;
 }
 
-@media (min-width: 1440px) {
-    div.container h1 {
-        color: black;
-    }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+}
+
+@media screen and (min-width: 992px){
+
+    
+
 }
