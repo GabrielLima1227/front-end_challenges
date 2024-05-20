@@ -40,8 +40,10 @@ div.container {
     max-width: 800px;
     border-radius: 1rem;
     background-color: var(--Dark_Grey);
+    transition: all 0.5s ease;
 }
 
+/* Imagem */
 div.container > div.imagem {
     margin: 2rem;
     padding: 1rem;
@@ -53,6 +55,7 @@ div.container > div.imagem > img {
     border-radius: 50%;
 }
 
+/* Informações */
 div.container > div.informacoes {
     display: grid;
     place-content: center;
@@ -77,6 +80,7 @@ p {
     margin-bottom: 2.5rem;
 }
 
+/* Social Links */
 div.container > div.social {
     display: grid;
     place-content: center;
@@ -114,7 +118,9 @@ div.container > div.social > ul.lista > li:hover > a {
     transition: all 0.4s ease-in-out;
 }
 
+/* Attribution */
 div.attribution {
+    text-align: center;
     margin: 1rem;
 }
 
@@ -123,15 +129,9 @@ div.attribution > a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+/* Media Queries */
+@media screen and (min-width: 768px){
     div.container {
-        width: 80vw;
-        transition: all 0.5s ease;
+        width: 70vw;
     }
-}
-
-@media screen and (min-width: 992px){
-
-    
-
 }
