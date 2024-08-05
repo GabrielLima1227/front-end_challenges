@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 16px;
     box-sizing: border-box;
 }
 :root{
@@ -18,19 +18,47 @@
 body{
     color: white;
     background-color: var(--OffBlack);
+    /* Grid Layout */
+    display: grid;
+    place-content: center;
 }
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
     margin: 10%;
     padding: 5%;
     max-width: 500px;
     border-radius: 1rem;
     background-color: var(--DarkGrey);
+    /* FlexBox */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 img{
-    max-width: 250px;
+    max-width: 75px;
     border-radius: 50%;
+}
+h1{
+    font: normal 500 1.5rem 'Inter', sans-serif;
+}
+.citizenship{
+    color: var(--Green);
+    font: normal 500 0.9rem 'Inter', sans-serif;
+}
+.career{
+    margin-top: 1rem;
+    font: normal 500 0.8rem 'Inter', sans-serif;
+}
+.social_links > li{
+    margin: 1rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 1rem;
+    list-style-type: none;
+    background-color: var(--Grey);
+}
+.social_links > li > a{
+    color: var(--White);
+    text-decoration: none;
+    font: normal 500 1rem 'Inter', sans-serif;
 }
