@@ -92,3 +92,25 @@ h1{
     color: var(--Green);
     text-decoration: underline;
 }
+@media (max-width: 600px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .citizenship {
+        font-size: 0.8rem;
+    }
+
+    .career {
+        font-size: 0.7rem;
+    }
+
+    .social_links > li {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
