@@ -14,28 +14,13 @@
     --Black: hsl(0, 0%, 7%);
 }
 body{
-    background-color: var(--yellow);
-    min-height: 100vh;
-    font-family: 'Figtree', 'sans-serif';
     display: grid;
     place-content: center;
-}
-img{
-    width: 100%;
-    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+    font-family: 'Figtree',  sans-serif;
 }
 .card{
-    position: relative;
-    background-color: var(--White);
-    outline: 1px solid black;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 5px black;
-    margin: 1rem;
-    padding: 1.5rem;
-    max-width: 400px;
-}
-.card::before{
-    content: " ";
-    display: block;
-    width: 100%;
+    
 }
