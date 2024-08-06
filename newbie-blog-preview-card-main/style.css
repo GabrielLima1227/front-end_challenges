@@ -12,6 +12,7 @@
     --White: hsl(0, 0%, 100%);
     --Grey: hsl(0, 0%, 50%);
     --Black: hsl(0, 0%, 7%);
+    --light-orange:hsl(33, 100%, 80%);
 }
 body{
     display: grid;
@@ -29,11 +30,12 @@ body{
     max-width: 350px;
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 5px 5px 1px 1px black;
     border: 1px solid black;
     background-color: var(--White);
+    box-shadow: 5px 5px 1px 1px black;
+    transition: max-width 0.3s ease-in-out;
 }
-.cover{
+.card_cover{
     border-radius: 1rem;
 }
 .card_status{
@@ -63,6 +65,12 @@ body{
     width: 100%;
     max-width: 35px;
 }
-@media (max-width: 600px) {
-    
+@media (min-width: 992px) {
+    body{
+        /* background: linear-gradient(180deg, var(--yellow), var(--White)); */
+        background: linear-gradient(180deg, var(--yellow), var(--light-orange));
+    }
+    .card{
+        max-width: 750px;
+    }
 }
