@@ -1,10 +1,22 @@
 @charset "UTF-8";
 
+/* - Mobile: 375px
+   - Desktop: 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 :root{
-    
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
 }
