@@ -20,3 +20,48 @@
     --Wenge_Brown: hsl(30, 10%, 34%);
     --Dark_Charcoal: hsl(24, 5%, 18%);
 }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: var(--Wenge_Brown);
+    background-color: var(--White);
+    font-family: 'Outfit', sans-serif;
+}
+img{
+    width: 100%;
+}
+.content{
+    padding: 2rem;
+}
+.content_main_title{
+    margin-bottom:20px;
+    color: var(--Dark_Charcoal);
+    font: normal 900 3rem 'Young Seri', serif;
+}
+.content_preparation_time{
+    padding: 15px 15px 1px 15px ;
+    margin-top: 25px;
+    border-radius: 0.5rem;
+    background-color: hsla(332, 51%, 32%, 0.5);
+}
+.content_preparation_time_subtitle{
+    color: var(--Dark_Raspberry);
+    font: normal 600 1rem 'Outfit', sans-serif;
+}
+.content_preparation_time_list{
+    list-style: none;
+    padding: 0px 25px;
+    margin-bottom: 25px;
+}
+.content_preparation_time_list_item::before{
+    content: "•";
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--Dark_Raspberry);
+}
+.content_subtitle{
+    margin: 20px 0px;
+    color: var(--Nutmeg);
+    font: normal 700 2rem 'Young Seri', serif;
+}
