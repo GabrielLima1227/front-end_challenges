@@ -147,7 +147,9 @@ tr {
     padding: 1rem;
     border-bottom: 1px solid var(--clr-Light-Grey);
 }
-
+.attribution{
+    text-align: center;
+}
 @media (max-width: 500px) {
     .recipe-wrapper {
         margin: 0;
