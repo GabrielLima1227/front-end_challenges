@@ -27,7 +27,7 @@ body{
 
     min-width:400px;
     font-family: 'Work Sans', sans-serif;
-    background: hsl(275, 100%, 97%) url(assets/images/background-pattern-mobile.svg) no-repeat top/100% fixed;
+    background: hsl(275, 100%, 97%) url(assets/images/background-pattern-mobile.svg) no-repeat top center/100% auto scroll;
 }
 .faq, .faq_heading, .faq_content, .faq_content_question, .faq_content_question_title{
     display: flex;
@@ -37,11 +37,12 @@ body{
 }
 .faq{
     gap: 15px;
-    max-width: 750px;
+    max-width: 500px;
     margin: 5%;
     padding: 5%;
     border-radius: 1rem;
     background-color: var(--White);
+    transition: 1s ease-in-out;
 }
 .faq_content{
     display: flex;
@@ -55,12 +56,14 @@ body{
     margin-left: 15px;
 }
 .faq_content_question_title{
+    text-align: left;
+    border: 0px solid white;
+    background-color: var(--White);
     justify-content: space-between;
     color: var(--Dark_purple);
     font: normal 600 1.25rem 'Work Sans', sans-serif;
 }
 .faq_content_question_response > p {
-    display: none;
     color: var(--Grayish_purple);
     font: normal 400 1rem 'Work Sans', sans-serif;
 }
@@ -74,4 +77,13 @@ body{
 a:hover {
     color: var(--Dark_purple);
     text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+    body{
+        background: hsl(275, 100%, 97%) url(assets/images/background-pattern-desktop.svg) no-repeat top/100% fixed;
+    }
+    .faq{
+        max-width: 1200px;
+    }
 }
