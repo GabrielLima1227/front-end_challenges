@@ -26,7 +26,8 @@ html, body {
 }
 body{
     display: flex;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
 
     min-width: 100%;
     background-color: var(--Cream);
@@ -38,14 +39,21 @@ body{
     margin: 1rem;
     max-width: 675px;
     border-radius: 1rem;
+    height: fit-content;
     background-color: var(--White);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.300);
+    transition: 1s;
 }
-.card_img img{
+.card_img{
     display: block;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+}
+.mobile-img{
+    display: block;
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
 .card_content{
@@ -92,13 +100,17 @@ button{
     font: normal 600 1rem 'Montserrat', sans-serif;
     transition: 0.5s ease-in-out;
 }
-button::before{
-    content:'';
+.shopping_button::before{
+    font-family: 'Material Icons';
+    content: 'sell'; /* Nome do ícone desejado */
+    font-size: 24px; /* Tamanho do ícone */
+    vertical-align: middle;
+    margin-right: 8px; /* Espaçamento à direita do ícone */
 }
 button:hover{
     border-radius: 1rem;
     transform: translate(-0px, -3px);
-    ox-shadow: 3px 3px 5px rgba(0, 0, 0, 0.200);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.200);
     /*Parte em que vai ocorrer a trasição + o tempo que vai levar.*/
     transition: transform 0.5s, border 0.5;
 }
@@ -111,4 +123,26 @@ button:hover{
 a:hover {
     color: var(--Dark_grayish_blue);
     text-decoration: underline;
+}
+@media (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(35, 55%, 80%));
+    }
+    .card{
+        display: grid;
+        grid-template-columns:50% 50%;    
+        max-width: 850px;
+    }
+    .mobile-img {
+        display: none;
+    }
+    .card_img {
+        width: 100%;
+        height: auto;
+        min-width: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1rem 0 0 1rem;
+        background-image: url(../images/image-product-desktop.jpg);
+    }
 }
