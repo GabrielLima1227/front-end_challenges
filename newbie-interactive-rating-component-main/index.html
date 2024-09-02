@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component - Frontend Mentor</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    
+    <div class="card">
+        <div class="star">
+            <img src="images/icon-star.svg" alt="Star icon">
+        </div>
+        <h3>How did we do?</h3>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rates">
+            <button><span>1</span></button>
+            <button><span>2</span></button>
+            <button><span>3</span></button>
+            <button><span>4</span></button>
+            <button><span>5</span></button>
+        </div>
+        <button id="btn">Submit</button>
 
-  <section class="rating_card">
-    <h1>How did we do?</h1>
-    <p>
-      Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!
-    </p>
-    <div class="rating">
-      <input type="radio" name="rating" id="1">1</input>
-      <input type="radio" name="rating" id="2">2</input>
-      <input type="radio" name="rating" id="3">3</input>
-      <input type="radio" name="rating" id="4">4</input>
-      <input type="radio" name="rating" id="5">5</input>
+        <div class="thanks">
+            <img src="images/illustration-thank-you.svg" alt="Thanks">
+            <span>You selected <div id="rated"></div> out of 5</span>
+            <h3>Thank you</h3>
+            <p>We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!</p>
+        </div>
     </div>
-    <button type="submit">Submit</button>
-  </section>
 
- <!-- <section class="rating_card">
-  <div>
-    <img src="#" alt="#">
-  </div>
-   <div class="choose">You selected Add rating here out of 5</div>
-    <div class="rating_card_content">
-      <h1>Thank you!</h1>
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!
-      </p>
-    </div>
- </section> -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <script src="main.js"></script>
 </body>
 </html>
